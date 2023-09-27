@@ -16,7 +16,6 @@ The "top_k" parameter allows you to control the number of explanations generated
 
     # Generate an explanation with top 3 results
     filtered_df.explain(
-        schema={'popularity': 'Highly_Popular'},
         title='Filter Operation Explanation',
         top_k=3,  # Set top_k parameter to 3
         figs_in_row=3 # Set number of figures in a row to 3
@@ -44,7 +43,6 @@ The "corr_TH" parameter allows you to set a threshold for correlation between fe
 
     # Generate an explanation with "corr_TH" set to the threshold
     filtered_df.explain(
-        schema={'popularity': 'Highly_Popular'},
         title='Filter Operation with lower Correlation Threshold',
         top_k=3,
         figs_in_row=3,

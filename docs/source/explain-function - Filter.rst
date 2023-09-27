@@ -25,7 +25,7 @@ Parameters
 ----------------
 
 - ``schema`` (dict, optional): A dictionary specifying result column names and any ignored columns. Default is ``None``.
-- ``attributes`` (List, optional): A list of specific columns to consider in the explanation. Default is ``None``.
+- ``attributes`` (List, optional): A list of specific columns to consider in the explanation. Default is ``None`` (all attributes).
 - ``top_k`` (int, optional): The number of explanations to generate. Default is ``1``.
 - ``figs_in_row`` (int, optional): The number of explanation figures to display in one row. Default is ``2``.
 - ``show_scores`` (bool, optional): Whether to display scores on the explanation figures. Default is ``False``.
@@ -50,7 +50,6 @@ Filter Usage Example with "spotify_all" DataFrame
 
     # Generate an explanation for the filter operation
     filtered_df.explain(
-        schema={'popularity': 'Highly_Popular'},
         title='Filter Operation Explanation',
         show_scores=True
     )

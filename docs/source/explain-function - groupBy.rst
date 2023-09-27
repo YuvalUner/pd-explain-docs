@@ -49,7 +49,6 @@ Additional Group By Usage Example with "spotify_all" DataFrame
 
     # Generate an explanation for the group by operation
     grouped_data.explain(
-        schema={'duration_ms': 'Mean_Duration_ms'},
         title='Group By Operation Explanation',
         show_scores=True
     )
