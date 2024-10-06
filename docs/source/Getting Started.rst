@@ -3,7 +3,7 @@
 Getting Started
 ===============
 
-Welcome to the world of **pd-explain**! This guide will walk you through the essential steps to get started with your data exploration and storytelling journey.
+Welcome to the world of **pd-explain**! (This is Itay, test...) This guide will walk you through the essential steps to get started with your data exploration and storytelling journey.
 
 Installation
 ------------
