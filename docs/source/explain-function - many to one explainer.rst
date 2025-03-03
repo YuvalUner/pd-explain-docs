@@ -10,6 +10,7 @@ Method Signature
 .. code-block:: python
 
    ExpDataFrame.explain(
+    explainer: Literal['fedex', 'outlier', 'many_to_one', 'shapley']='fedex',
     attributes: List = None,
     use_sampling: bool | None = None,
     sample_size: int | float = 5000
@@ -61,6 +62,7 @@ Separation Error is the % of data outside the group that is covered by the expla
 
 Parameters
 -----------------------------------
+- ``explainer`` (str): The explainer to use. This is shared with other explainers, but for the many to one explainer, it must be set to `many_to_one`.
 - ``attributes`` (list, optional): The attributes to consider when generating explanations. Default is `None`.
 - ``use_sampling`` (bool | None, optional): Whether to use sampling to speed up the computation. Default is to use the global setting.
 - ``sample_size`` (int, optional): The number of samples to use. Default is `5000`.
