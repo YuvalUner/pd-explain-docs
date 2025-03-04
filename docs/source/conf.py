@@ -3,11 +3,9 @@
 # -- Project information
 
 project = 'pd-explain'
-copyright = '2021, analysis-bots'
+copyright = '2025, analysis-bots'
 author = 'analysis-bots'
-
-release = '0.1'
-version = '0.1.0'
+release = '1.0.1'
 
 # -- General configuration
 
@@ -30,6 +28,7 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+html_static_path = ['_static']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
