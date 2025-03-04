@@ -22,5 +22,7 @@ Contents
    explain-function - Filter
    filter parameters
    explain-function - groupBy
+   explain-function - outlier explainer
+   explain-function - many to one explainer
    api
    apigroupby
