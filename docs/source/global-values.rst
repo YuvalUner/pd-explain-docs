@@ -2,7 +2,7 @@
 
 Global Values
 =====================
-Here you can find an explanation for global values you can use and control when using pd-explain.
+Here you can find an explanation for global values you can use and control when using pd-explain during each session.
 
 Use Sampling
 ----------------

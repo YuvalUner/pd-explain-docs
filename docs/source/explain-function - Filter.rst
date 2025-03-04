@@ -12,6 +12,8 @@ Method Signature
 
     ExpDataFrame.explain(
         self,
+        use_sampling: bool = None,
+        sample_size: int | float = 5000,
         schema: dict = None,
         attributes: List = None,
         top_k: int = 1,
@@ -24,6 +26,8 @@ Method Signature
 Parameters
 ----------------
 
+- ``use_sampling`` (bool, optional): Whether to use sampling when generating explanations. Default is ``None`` (use global value).
+- ``sample_size`` (int | float, optional): The number of samples to use when sampling. Default is ``5000``. Using a float between 0 and 1 will sample a fraction of the data.
 - ``schema`` (dict, optional): A dictionary specifying result column names and any ignored columns. Default is ``None``.
 - ``attributes`` (List, optional): A list of specific columns to consider in the explanation. Default is ``None`` (all attributes).
 - ``top_k`` (int, optional): The number of explanations to generate. Default is ``1``.
