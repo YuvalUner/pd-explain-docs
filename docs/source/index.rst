@@ -25,5 +25,6 @@ Contents
    explain-function - outlier explainer
    explain-function - many to one explainer
    explain-function - MetaInsight explainer
+   llm integrations
    api
    apigroupby
