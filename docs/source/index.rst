@@ -24,5 +24,6 @@ Contents
    explain-function - groupBy
    explain-function - outlier explainer
    explain-function - many to one explainer
+   explain-function - MetaInsight explainer
    api
    apigroupby

@@ -26,7 +26,7 @@ Methods
 
         Generate an explanation for the dataframe, using the selected explainer and based on the last operation performed.
 
-        :param explainer: The explainer to use. Currently supported: 'fedex', 'many to one', 'shapley', 'outlier'. Note that 'outlier' is only supported for series, not for dataframes.
+        :param explainer: The explainer to use. Currently supported: 'fedex', 'many to one', 'shapley', 'outlier', 'metainsight'. Note that 'outlier' is only supported for series, not for dataframes.
         :param attributes: All explainers. Which columns to consider in the explanation.
         :param use_sampling: All explainers. Whether or not to use sampling when generating an explanation. This can massively speed up the explanation generation process, but may result in less accurate explanations. We use sampling methods that we have empirically tested to only minimally affect the accuracy of the explanations. Defaults to None, in which case the value set in the global configuration is used (which defaults to True).
         :param sample_size: All explainers. The number of samples to use when use_sampling is True. Can be either an integer or a float. If it is an integer, that number of samples will be used. If it is a float between 0 and 1, it will be interpreted as a percentage of the total number of samples. Defaults to 5000, which is also the minimum value.
