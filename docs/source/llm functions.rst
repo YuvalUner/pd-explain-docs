@@ -1,4 +1,4 @@
-.. _llm integrations:
+.. _llm-integrations:
 
 PD-Explain LLM Integrations
 =============================
