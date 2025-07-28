@@ -1,9 +1,12 @@
 .. _explain-function - MetaInsight explainer:
 
-MetaInsight Explainer
+MetaInsight Explainer (Beta)
 ===========================================
 The **MetaInsight explainer** automatically finds the most interesting common patterns in your data.
 It provides insights into the relationships between columns, highlighting correlations, trends, and anomalies.
+
+Please note that this explainer is currently in beta and may not work as expected in all cases.
+It may also be subject to changes in future releases.
 
 Method Signature
 --------------------------
