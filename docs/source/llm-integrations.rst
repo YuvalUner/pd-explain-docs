@@ -11,44 +11,7 @@ PD-Explain provides several integrations with large language models (LLMs) to pr
 Setup
 ----------------------
 Each LLM functionality has its own settings which can be controlled separately.
-Each functionality requires a different LLM API key, which can be set using:
-
-.. code-block:: python
-
-    import pd_explain
-    # Set up the LLM API key for reasoning tasks.
-    pd_explain.LlmSetupMethods.write_reasoning_llm_api_key("YOUR_API_KEY")
-
-    # Set up the LLM API key for automated data exploration tasks.
-    pd_explain.LlmSetupMethods.write_automated_exploration_llm_api_key("YOUR_API_KEY")
-
-    # Set up the LLM API key for beautification tasks.
-    pd_explain.LlmSetupMethods.write_beautification_model_api_key("YOUR_API_KEY")
-
-These methods will write the API keys to the configuration file, which will persist across sessions.
-
-Additionally, each functionality has three more settings that can be controlled:
-
-- **Model**: The LLM model to use for the functionality. This can be set using the `write_reasoning_llm_model`, `write_automated_exploration_llm_model`, and `write_beautification_vision_model` methods.
-- **Provider**: The name of the LLM API provider to use for the functionality. This can be set using the `write_reasoning_llm_provider`, `write_automated_exploration_llm_provider`, and `write_beautification_llm_provider` methods. We currently support OpenAI, together and Google.
-- **Provider URL**: The URL of the LLM API provider. This is useful if you wish to use a provider aside from our supported ones. For supported ones, this field will be automatically set to the correct value. This can be set using the `write_reasoning_provider_url`, `write_automated_exploration_llm_provider_url`, and `write_beautification_model_provider_url` methods.
-
-Default values for these settings are:
-
-- **Reasoning**:
-    - Model: `deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free`
-    - Provider: `together`
-    - Provider URL: `https://api.together.xyz/v1/`
-- **Automated Exploration**:
-    - Model: `deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free`
-    - Provider: `together`
-    - Provider URL: `https://api.together.xyz/v1/`
-- **Beautification** (beta):
-    - Model: `gemini-2.0-flash` (The model used here must be a multi-modal model with an API that supports image input)
-    - Provider: `google`
-    - Provider URL: `https://generativelanguage.googleapis.com/v1beta/openai/`
-
-Note that all of these models offer free tiers, so you can use them without any cost (you will need to sign up for an account and obtain an API key).
+Please refer to the `setup guide in our github repository <https://github.com/analysis-bots/pd-explain/blob/main/Examples/Notebooks/LLM%20Setup%20Guide.ipynb>`_.
 
 Reasoning
 --------------------------
@@ -144,6 +107,7 @@ Example Usage
         "Explore the effect that education and occupation have on one's capital-loss and capital-gain"
     )
 
+Please see our `demo notebook <https://github.com/analysis-bots/pd-explain/blob/main/Examples/Notebooks/LLM%20Automated%20Exploration%20Demo.ipynb>`_ for examples of the output of the automated data exploration functionality's output.
 Saving and Loading Exploration Results
 ************************************************
 You can save the results of the automated data exploration to a file, and load it later to continue exploring or to visualize the results.
